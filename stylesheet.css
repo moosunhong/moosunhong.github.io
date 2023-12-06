@@ -2,7 +2,7 @@ body {
 
 	background-color:#fff;
 
-	font-family:'Open Sans', sans-serif;	
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;	
 
 	margin:0;
 
@@ -50,7 +50,7 @@ a:hover {
 
         margin:10px auto 10px auto;
 
-	width:752px;
+	width:960px;
 
    
 
@@ -102,7 +102,7 @@ a:hover {
 
 	padding:0;
 
-        width:752px;
+        width:960px;
 
 
 
@@ -120,7 +120,7 @@ a:hover {
 
 	color:#727376;
 
-        height:70px;
+        height:50px;
 
   
 
@@ -160,7 +160,7 @@ div.log{
 
         height:150px;
 
-        width:752px;
+        width:960px;
 
 
 
@@ -178,7 +178,7 @@ div.log{
 
     bottom:0px;
 
-    width:780px;
+    width:960px;
 
     height:40px;
 
@@ -208,7 +208,7 @@ div.log{
 
     line-height:30px;
 
-    width:752px;
+    width:960px;
 
     list-style:none;
 
@@ -228,7 +228,7 @@ div.menu{
 
     color:#222;
 
-    width:752px;
+    width:960px;
 
     height:30px;
 
@@ -256,7 +256,7 @@ background-color:#222;
 
     bottom:0px;
 
-    width:752px;
+    width:960px;
 
     height:30px;
 
@@ -334,7 +334,7 @@ background-color:#222;
 
 	padding:0px 0px 0px 0px;
 
-        width:752px;
+        width:960px;
 
 	color:#444;
 
@@ -380,7 +380,7 @@ background-color:#222;
 
 #content ul {
 
-	margin:0 0 0 20px;
+	margin:0 0 0 30px;
 
         list-style-type:square;
 
