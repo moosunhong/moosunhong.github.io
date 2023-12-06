@@ -120,7 +120,7 @@ a:hover {
 
 	color:#727376;
 
-        height:75px;
+        height:80px;
 
   
 
@@ -226,7 +226,7 @@ div.menu{
 
     display:block;
 
-    color:#222;
+    color:#fff;
 
     width:960px;
 
@@ -238,7 +238,7 @@ div.menu{
 
     font-weight:bold;
 
-    background-color:#fff;
+    background-color:#222;
 
 }
 
@@ -296,9 +296,9 @@ div.menu{
 
     display:block;
 
-    color:#222;
+    color:#fff;
 
-    background-color:#fff;
+    background-color:#222;
 
  
 
