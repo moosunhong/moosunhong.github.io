@@ -289,6 +289,16 @@ footer {
   line-height: 1.5;
 }
 
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Or none, if you want zero change */
+  color: inherit;
+}
+
 ol {
   padding-left: 2.5rem;
   list-style-position: outside;
@@ -314,12 +324,22 @@ ol > li::marker {
     }
 
     .faculty-photo {
-      width: 180px;
+      width: 250px;
       height: auto;
-      border-radius: 36px;
+      border-radius: 50px;
       object-fit: cover;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
+
+
+@media (max-width: 768px) {
+  .faculty {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
 
     .faculty-info .title {
       font-weight: 600;
@@ -357,18 +377,23 @@ ol > li::marker {
 
     .students-grid {
       display: flex;
-      gap: 2rem;
+      gap: 3rem;
       flex-wrap: wrap;
     }
 
+@media (max-width: 768px) {
+  .students-grid {
+    justify-content: center;
+  }
+}
     .student-card {
-      width: 180px;
+      width: 200px;
       text-align: center;
     }
 
     .student-photo {
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: contain;
       border-radius: 36px;
       background-color: #fff;
@@ -383,7 +408,7 @@ ol > li::marker {
     }
 
     .student-info {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #222;
       line-height: 1.5;
     }
