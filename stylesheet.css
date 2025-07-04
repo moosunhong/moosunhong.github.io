@@ -49,6 +49,17 @@ header {
   font-weight: 700;
 }
 
+.lab-name a.lab-link {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+.lab-name a.lab-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .lab-name .lab-sub {
   font-size: 0.8rem;
 }
@@ -303,9 +314,9 @@ ol > li::marker {
     }
 
     .faculty-photo {
-      width: 200px;
+      width: 180px;
       height: auto;
-      border-radius: 40px;
+      border-radius: 36px;
       object-fit: cover;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
@@ -351,13 +362,13 @@ ol > li::marker {
     }
 
     .student-card {
-      width: 190px;
+      width: 180px;
       text-align: center;
     }
 
     .student-photo {
-      width: 160px;
-      height: 160px;
+      width: 150px;
+      height: 150px;
       object-fit: contain;
       border-radius: 36px;
       background-color: #fff;
@@ -396,6 +407,10 @@ ol > li::marker {
       text-align: center;
     }
 
+    .group-photo {
+      margin: 0 auto;
+    }
+
     .group-photo img {
       width: 100%;
       max-width: 800px;
@@ -403,11 +418,11 @@ ol > li::marker {
       border-radius: 8px;
     }
 
-  .group-photo figcaption {
-    font-size: 1em;
-    color: var(--primary-color);
-    font-weight: 600;
-  }
+    .group-photo figcaption {
+      font-size: 1em;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
 
     .recruiting-text {
       max-width: 800px;
