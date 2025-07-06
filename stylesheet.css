@@ -152,62 +152,69 @@ nav ul li a:hover {
 
 .overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  opacity: 0; visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease;
   z-index: 1000;
 }
 
 .overlay.show {
-  opacity: 1; visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
   nav ul {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
 }
 
-  .banner-slider {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 2/1;
-    max-height: 400px;
-    min-height: 300px;
-    overflow: hidden;
-  }
+.banner-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/1;
+  max-height: 400px;
+  min-height: 300px;
+  overflow: hidden;
+}
 
-  .banner-slider .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+.banner-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  .banner-slider .slide.active {
-    opacity: 1;
-  }
+.banner-slider .slide.active {
+  opacity: 1;
+}
 
- .banner-slider .prev,
+.banner-slider .prev,
 .banner-slider .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);  /* semi-transparent dark circle */
+  background: rgba(0, 0, 0, 0.4);
+  /* semi-transparent dark circle */
   color: white;
   border: none;
   font-size: 2rem;
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* circle shape */
+  border-radius: 50%;
+  /* circle shape */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +224,8 @@ nav ul li a:hover {
 
 .banner-slider .prev:hover,
 .banner-slider .next:hover {
-  background: rgba(0,0,0,0.7); /* darker on hover */
+  background: rgba(0, 0, 0, 0.7);
+  /* darker on hover */
 }
 
 .banner-slider .prev {
@@ -232,7 +240,7 @@ nav ul li a:hover {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
   width: 40px;
@@ -247,7 +255,7 @@ nav ul li a:hover {
 }
 
 .banner-slider .pause-play:hover {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 main {
@@ -295,7 +303,8 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline; /* Or none, if you want zero change */
+  text-decoration: underline;
+  /* Or none, if you want zero change */
   color: inherit;
 }
 
@@ -306,30 +315,30 @@ ol {
   color: var(--text-color);
 }
 
-ol > li {
+ol>li {
   margin-bottom: 1rem;
 }
 
-ol > li::marker {
+ol>li::marker {
   color: var(--primary-color);
   font-weight: bold;
 }
 
-    /* Faculty block */
-    .faculty {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
+/* Faculty block */
+.faculty {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
 
-    .faculty-photo {
-      width: 250px;
-      height: auto;
-      border-radius: 50px;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
+.faculty-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
 
 
 @media (max-width: 768px) {
@@ -341,120 +350,121 @@ ol > li::marker {
 
 }
 
-    .faculty-info .title {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #333;
-      margin-bottom: 0.8rem;
-    }
+.faculty-info .title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
 
-    .faculty-info p {
-      font-weight: 400;
-      font-size: 1rem;
-      color: #000;
-      margin: 0.3rem 0;
-      line-height: 1.5;
-    }
+.faculty-info p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000;
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
 
-    .faculty-info a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
+.faculty-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
 
-    .faculty-info a:hover {
-      text-decoration: underline;
-    }
+.faculty-info a:hover {
+  text-decoration: underline;
+}
 
-    /* Student grid block */
-    .student-section {
-      margin-bottom: 3rem;
-    }
+/* Student grid block */
+.student-section {
+  margin-bottom: 3rem;
+}
 
-    .student-section h2 {
-      color: var(--primary-color);
-      margin-bottom: 1.5rem;
-    }
+.student-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
 
-    .students-grid {
-      display: flex;
-      gap: 3rem;
-      flex-wrap: wrap;
-    }
+.students-grid {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 768px) {
   .students-grid {
     justify-content: center;
   }
 }
-    .student-card {
-      width: 200px;
-      text-align: center;
-    }
 
-    .student-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: contain;
-      border-radius: 36px;
-      background-color: #fff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      margin-bottom: 0.5rem;
-    }
+.student-card {
+  width: 200px;
+  text-align: center;
+}
 
-    .student-name {
-      font-weight: 600;
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
-    }
+.student-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 36px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.5rem;
+}
 
-    .student-info {
-      font-size: 0.9rem;
-      color: #222;
-      line-height: 1.5;
-    }
+.student-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
 
-    .student-info b {
-      font-weight: 700;
-    }
+.student-info {
+  font-size: 0.9rem;
+  color: #222;
+  line-height: 1.5;
+}
 
-    .student-email {
-      margin-top: 0.3rem;
-      display: block;
-      color: var(--primary-color);
-      text-decoration: none;
-    }
+.student-info b {
+  font-weight: 700;
+}
 
-    .student-email:hover {
-      text-decoration: underline;
-    }
+.student-email {
+  margin-top: 0.3rem;
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+}
 
-    #join-us {
-      text-align: center;
-    }
+.student-email:hover {
+  text-decoration: underline;
+}
 
-    .group-photo {
-      margin: 0 auto;
-    }
+#join-us {
+  text-align: center;
+}
 
-    .group-photo img {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      border-radius: 8px;
-    }
+.group-photo {
+  margin: 0 auto;
+}
 
-    .group-photo figcaption {
-      font-size: 1em;
-      color: var(--primary-color);
-      font-weight: 600;
-    }
+.group-photo img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+}
 
-    .recruiting-text {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
+.group-photo figcaption {
+  font-size: 1em;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.recruiting-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 
 .recruiting-text a {
   color: var(--primary-color);
@@ -463,4 +473,18 @@ ol > li::marker {
 
 .recruiting-text a:hover {
   text-decoration: underline;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.no-select {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
