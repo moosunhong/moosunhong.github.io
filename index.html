@@ -184,7 +184,7 @@
     document.getElementById('pausePlayBtn').addEventListener('click', pausePlay);
 
     document.addEventListener('contextmenu', function (e) {
-      if (e.target.tagName === 'IMG' || e.target.classList.contains('image-overlay') || e.target.classList.contains('slide')) {
+      if (e.target.tagName === 'IMG' || e.target.classList.contains('image-overlay') || e.target.classList.contains('slide') || e.target.classList.contains('banner-overlay')) {
         e.preventDefault();
       }
     });
