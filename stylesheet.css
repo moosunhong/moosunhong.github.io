@@ -475,28 +475,23 @@ ol>li::marker {
 }
 
 img {
-  user-drag: none;
   -webkit-user-drag: none;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.no-select {
   user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .image-wrapper {
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
 .image-wrapper img {
   display: block;
   -webkit-user-drag: none;
   user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .image-overlay {
