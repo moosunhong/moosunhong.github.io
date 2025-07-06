@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hong Group | Seoul National University - Join Us</title>
-  <meta name="description" content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
+  <meta name="description"
+    content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
   <meta name="author" content="Moo Sun Hong" />
   <meta property="og:title" content="Hong Group | Seoul National University" />
-  <meta property="og:description" content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
+  <meta property="og:description"
+    content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" />
   <link rel="stylesheet" href="/stylesheet.css" />
 </head>
@@ -17,10 +19,13 @@
   <header>
     <div class="top-bar">
       <div class="logo-group">
-        <img src="/SNU.png" alt="SNU Logo" class="logo" draggable="false" oncontextmenu="return false;" ondragstart="return false;" />
+        <div class="image-wrapper">
+          <img src="/SNU.png" alt="SNU Logo" class="logo" />
+          <div class="image-overlay"></div>
+        </div>
         <div class="lab-name">
           <a href="/" class="lab-link">
-          <span class="lab-main">Hong Group</span></a><br>
+            <span class="lab-main">Hong Group</span></a><br>
           <span class="lab-sub">Seoul National University</span>
         </div>
       </div>
@@ -57,10 +62,13 @@
     <section id="join-us">
       <h2>Join the Laboratory of Advanced Manufacturing Process (LAMP)!</h2>
 
-    <figure class="group-photo">
-      <img src="photo-group.jpg" alt="Hong Group Photo">
-      <figcaption>Hong group (October 2024)</figcaption>
-    </figure>
+      <div class="image-wrapper">
+        <figure class="group-photo">
+          <img src="photo-group.jpg" alt="Hong Group Photo">
+          <figcaption>Hong group (October 2024)</figcaption>
+        </figure>
+        <div class="image-overlay"></div>
+      </div>
 
       <div class="recruiting-text">
         <p>
@@ -100,11 +108,18 @@
       overlay.classList.remove('show');
       hamburger.classList.remove('active');
     }
-  document.addEventListener('contextmenu', function(e) {
-    if (e.target.tagName === 'IMG') {
-      e.preventDefault();
-    }
-  });
+
+    document.addEventListener('contextmenu', function (e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("img").forEach(img => {
+        img.setAttribute("draggable", "false");
+        img.setAttribute("ondragstart", "return false;");
+      });
+    });
   </script>
 </body>
 
