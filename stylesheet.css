@@ -478,8 +478,6 @@ ol>li::marker {
 img {
   user-drag: none;
   -webkit-user-drag: none;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .no-select {
@@ -487,4 +485,21 @@ img {
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block; /* or block, depending on your layout */
+}
+
+.image-wrapper img {
+  display: block;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: transparent;
 }
