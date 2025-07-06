@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hong Group | Seoul National University - Join Us</title>
+  <meta name="description" content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
+  <meta name="author" content="Moo Sun Hong" />
+  <meta property="og:title" content="Hong Group | Seoul National University" />
+  <meta property="og:description" content="Join the Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" />
+  <link rel="stylesheet" href="/stylesheet.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo-group">
+        <img src="/SNU.png" alt="SNU Logo" class="logo">
+        <div class="lab-name">
+          <a href="/" class="lab-link">
+          <span class="lab-main">Hong Group</span></a><br>
+          <span class="lab-sub">Seoul National University</span>
+        </div>
+      </div>
+      <nav>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/members/">Members</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slide panel -->
+  <div class="nav-panel" id="nav-panel">
+    <div class="nav-links">
+      <ul>
+        <li><a href="/" onclick="closeNav()">Home</a></li>
+        <li><a href="/members/" onclick="closeNav()">Members</a></li>
+        <li><a href="/publications/" onclick="closeNav()">Publications</a></li>
+        <li><a href="/contact/" onclick="closeNav()">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+  <main>
+    <section id="join-us">
+      <h2>Join the Laboratory of Advanced Manufacturing Process (LAMP)!</h2>
+
+    <figure class="group-photo">
+      <img src="photo-group.jpg" alt="Hong Group Photo">
+      <figcaption>Hong group (October 2024)</figcaption>
+    </figure>
+
+      <div class="recruiting-text">
+        <p>
+          We are always looking for motivated graduate students and postdoctoral researchers to join our team.
+          If you are passionate about process systems engineering, digital twins, and intelligent biomanufacturing,
+          we encourage you to reach out!
+        </p>
+        <p>
+          Please send your CV and a brief statement of research interests to
+          <a href="mailto:moosun@snu.ac.kr">moosun@snu.ac.kr</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Building 302, Room 914, 1 Gwanak-ro, Gwanak-gu, Seoul, 08826, Republic of Korea<br>
+    E-mail: <a href="mailto:moosun@snu.ac.kr">moosun@snu.ac.kr</a><br>
+    &copy; <span id="year"></span> Hong Group at Seoul National University
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navPanel = document.getElementById('nav-panel');
+    const overlay = document.getElementById('overlay');
+    const hamburger = document.getElementById('hamburger');
+
+    function toggleNav() {
+      navPanel.classList.toggle('show');
+      overlay.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    }
+
+    function closeNav() {
+      navPanel.classList.remove('show');
+      overlay.classList.remove('show');
+      hamburger.classList.remove('active');
+    }
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+  </script>
+</body>
+
+</html>
