@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hong Group | Seoul National University</title>
   <meta name="description" content="Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
   <meta name="author" content="Moo Sun Hong" />
   <meta property="og:title" content="Hong Group | Seoul National University" />
-  <meta property="og:description" content="Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
+  <meta property="og:description"
+    content="Laboratory of Advanced Manufacturing Process (LAMP) at Seoul National University" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" />
   <link rel="stylesheet" href="/stylesheet.css" />
 </head>
@@ -17,10 +18,13 @@
   <header>
     <div class="top-bar">
       <div class="logo-group">
-        <img src="/SNU.png" alt="SNU Logo" class="logo" draggable="false" oncontextmenu="return false;" ondragstart="return false;" />
+        <div class="image-wrapper">
+          <img src="/SNU.png" alt="SNU Logo" class="logo" />
+          <div class="image-overlay"></div>
+        </div>
         <div class="lab-name">
           <a href="/" class="lab-link">
-          <span class="lab-main">Hong Group</span></a><br>
+            <span class="lab-main">Hong Group</span></a><br>
           <span class="lab-sub">Seoul National University</span>
         </div>
       </div>
@@ -38,14 +42,14 @@
     </div>
   </header>
 
-<div class="banner-slider">
-  <div class="slide active" style="background-image: url('banner1.png');"></div>
-  <div class="slide" style="background-image: url('banner2.png');"></div>
+  <div class="banner-slider">
+    <div class="slide active" style="background-image: url('banner1.png');"></div>
+    <div class="slide" style="background-image: url('banner2.png');"></div>
 
-  <button class="prev" onclick="prevSlide()">&#10094;</button> <!-- ← -->
-  <button class="next" onclick="nextSlide()">&#10095;</button> <!-- → -->
-  <button class="pause-play" id="pausePlayBtn">&#10074;&#10074;</button> <!-- || -->
-</div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button> <!-- ← -->
+    <button class="next" onclick="nextSlide()">&#10095;</button> <!-- → -->
+    <button class="pause-play" id="pausePlayBtn">&#10074;&#10074;</button> <!-- || -->
+  </div>
 
   <!-- Slide panel -->
   <div class="nav-panel" id="nav-panel">
@@ -66,30 +70,45 @@
     <section id="home">
       <h2>Welcome to the Laboratory of Advanced Manufacturing Process (LAMP)!</h2>
       <p>
-        Our research group focuses on the digital transformation and autonomous operation of (bio)manufacturing processes through a model-based systems engineering approach. This approach integrates mathematical modeling, process data analysis, artificial intelligence (AI), and optimal design and control techniques.
+        Our research group focuses on the digital transformation and autonomous operation of (bio)manufacturing
+        processes through a model-based systems engineering approach. This approach integrates mathematical modeling,
+        process data analysis, artificial intelligence (AI), and optimal design and control techniques.
       </p>
       <p>
-        We primarily target the continuous manufacturing of biopharmaceuticals. By applying hybrid modeling strategies that combine the interpretability of first-principles models with the predictive power of data-driven models, we aim to quantitatively understand and predict the complex behavior of bioprocesses.
+        We primarily target the continuous manufacturing of biopharmaceuticals. By applying hybrid modeling strategies
+        that combine the interpretability of first-principles models with the predictive power of data-driven models, we
+        aim to quantitatively understand and predict the complex behavior of bioprocesses.
       </p>
       <p>
-        These models are implemented as digital twins and deployed in automated production environments to enable smart operational strategies—such as real-time optimization, quality prediction, anomaly detection, and autonomous control.
+        These models are implemented as digital twins and deployed in automated production environments to enable smart
+        operational strategies—such as real-time optimization, quality prediction, anomaly detection, and autonomous
+        control.
       </p>
       <p>
-        We utilize systems engineering methods—such as model predictive control (MPC), quality-by-design (QbD), and optimal experimental design—selectively tailored to the characteristics of each process. Through the integrated use of theory, experimentation, and computation, we strive to advance the field of intelligent biomanufacturing both academically and industrially.
+        We utilize systems engineering methods—such as model predictive control (MPC), quality-by-design (QbD), and
+        optimal experimental design—selectively tailored to the characteristics of each process. Through the integrated
+        use of theory, experimentation, and computation, we strive to advance the field of intelligent biomanufacturing
+        both academically and industrially.
       </p>
     </section>
 
     <section class="news">
       <h2>News</h2>
       <ul>
-        <li>Siyang Park receives the Outstanding Poster Presentation Award at the KIChE Spring Meeting in Daegu (April 2025)</li>
-        <li>Hanbit Kim receives the Outstanding Oral Presentation Award at the KIChE Fall Meeting in Busan (October 2024)</li>
-        <li>Siyang Park and Taehyeon Kim receive the Grand Prize for the Chemical Engineering Process Design Competition at the KIChE Fall Meeting in Busan (October 2024)</li>
+        <li>Siyang Park receives the Outstanding Poster Presentation Award at the KIChE Spring Meeting in Daegu (April
+          2025)</li>
+        <li>Hanbit Kim receives the Outstanding Oral Presentation Award at the KIChE Fall Meeting in Busan (October
+          2024)</li>
+        <li>Siyang Park and Taehyeon Kim receive the Grand Prize for the Chemical Engineering Process Design Competition
+          at the KIChE Fall Meeting in Busan (October 2024)</li>
         <li>Moo Sun Hong receives College of Engineering Excellence in Teaching Award (October 2023)</li>
         <li>Moo Sun Hong joins Seoul National University as an Assistant Professor (March 2023)</li>
-        <li>Moo Sun Hong receives the Outstanding Poster Presentation Award at the Integrated Continuous Biomanufacturing V in Sitges, Spain (October 2022)</li>
-        <li>Moo Sun Hong receives the 2021 AIChE PD2M Award for Excellence in Integrated QbD Practice (November 2021)</li>
-        <li>Moo Sun Hong receives the 2021 AIChE Separations Division Graduate Student Research Award (November 2021)</li>
+        <li>Moo Sun Hong receives the Outstanding Poster Presentation Award at the Integrated Continuous
+          Biomanufacturing V in Sitges, Spain (October 2022)</li>
+        <li>Moo Sun Hong receives the 2021 AIChE PD2M Award for Excellence in Integrated QbD Practice (November 2021)
+        </li>
+        <li>Moo Sun Hong receives the 2021 AIChE Separations Division Graduate Student Research Award (November 2021)
+        </li>
         <li>Moo Sun Hong is a finalist for the 2021 CAST Directors' Best Student Presentation Award (November 2021)</li>
       </ul>
     </section>
@@ -119,46 +138,52 @@
       hamburger.classList.remove('active');
     }
 
-  const slides = document.querySelectorAll('.banner-slider .slide');
-  let currentSlide = 0;
-  let slideInterval = setInterval(nextSlide, 5000);
-  let isPlaying = true;
+    const slides = document.querySelectorAll('.banner-slider .slide');
+    let currentSlide = 0;
+    let slideInterval = setInterval(nextSlide, 5000);
+    let isPlaying = true;
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function pausePlay() {
+      const btn = document.getElementById('pausePlayBtn');
+      if (isPlaying) {
+        clearInterval(slideInterval);
+        btn.innerHTML = '&#9658;'; // ► Play symbol
+      } else {
+        slideInterval = setInterval(nextSlide, 5000);
+        btn.innerHTML = '&#10074;&#10074;'; // || Pause symbol
+      }
+      isPlaying = !isPlaying;
+    }
+
+    document.getElementById('pausePlayBtn').addEventListener('click', pausePlay);
+
+    document.addEventListener('contextmenu', function (e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
     });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  function pausePlay() {
-    const btn = document.getElementById('pausePlayBtn');
-    if (isPlaying) {
-      clearInterval(slideInterval);
-      btn.innerHTML = '&#9658;'; // ► Play symbol
-    } else {
-      slideInterval = setInterval(nextSlide, 5000);
-      btn.innerHTML = '&#10074;&#10074;'; // || Pause symbol
-    }
-    isPlaying = !isPlaying;
-  }
-
-  document.getElementById('pausePlayBtn').addEventListener('click', pausePlay);
-
-  document.addEventListener('contextmenu', function(e) {
-    if (e.target.tagName === 'IMG') {
-      e.preventDefault();
-    }
-  });
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("img").forEach(img => {
+        img.setAttribute("draggable", "false");
+        img.setAttribute("ondragstart", "return false;");
+      });
+    });
   </script>
 </body>
 
