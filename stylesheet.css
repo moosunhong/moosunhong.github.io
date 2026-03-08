@@ -417,7 +417,7 @@ ol>li::marker {
 }
 
 .student-info {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #222;
   line-height: 1.5;
 }
@@ -524,3 +524,4 @@ img {
   opacity: 0.01;
 
 }
+
