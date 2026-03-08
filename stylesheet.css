@@ -396,13 +396,13 @@ ol>li::marker {
 }
 
 .student-card {
-  width: 220px;
+  width: 200px;
   text-align: center;
 }
 
 .student-photo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   border-radius: 36px;
   background-color: #fff;
@@ -524,5 +524,6 @@ img {
   opacity: 0.01;
 
 }
+
 
 
